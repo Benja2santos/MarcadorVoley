@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+/* Título */
+.caja-titulo {
+    background: #111;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.titulo {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Set actual */
+.caja-sets {
+    margin: 20px 0;
+}
+
+.sets {
+    font-size: 1.8rem;
+    background: #f1c40f;
+    color: #000;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Contenedor equipos */
+body > div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+/* Tarjeta equipo */
+body > div:nth-of-type(3) > div {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Nombre equipo */
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Sets ganados */
+span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Botones */
+button {
+    margin: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Botón sumar */
+button:nth-child(3) {
+    background: #2ecc71;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background: #27ae60;
+}
+
+/* Botón restar */
+button:nth-child(4) {
+    background: #e74c3c;
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background: #c0392b;
+}
+
+/* Botones inferiores */
+body > div:last-of-type {
+    margin-top: 30px;
+}
+
+body > div:last-of-type button {
+    background: #34495e;
+    color: white;
+}
+
+body > div:last-of-type button:hover {
+    background: #2c3e50;
+}

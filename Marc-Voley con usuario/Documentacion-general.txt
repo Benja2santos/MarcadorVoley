@@ -1,0 +1,7 @@
+Control de marcador:
+Interfaz para el manejo del marcador para el partido
+Interfaz vagamente hecha
+funciones por empezar
+
+Vista usuario: 
+Vista tiempo real del partido para el usuario

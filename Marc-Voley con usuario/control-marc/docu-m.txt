@@ -1,0 +1,66 @@
+CONTENEDORES PARA LA PLANTILLA:
+    1)  boton de sumar y restar
+            botones para sumar y restar puntos a los equipos
+    2)  mostrar los puntos
+            los puntos van a arrancar de 0
+    3)  mostrar los sets
+            los van a arrancar desde el primer set
+                set N 1
+                Primer Set
+                1er Set
+    4)  mostrar equipos
+            equipoA / equipoB
+                los equipos podran tener su propio nombre
+    5)  mostrar equipo ganador
+            avisar quien gano el primer set
+                mostrar el que gane 2 sets
+    6)  editar nombres de los equipos
+            tener nombres permanentes durante todo el partido
+    7)  mostrar los sets ganados
+            contador de sets desde el 1 al 3 / primero al tercero
+    8)  reiniciar puntos
+            boton de reiniciar puntos si es necesario
+    9)  reiniciar partidos
+            reiniciar partido si termina
+
+CONTENEDORES:
+    
+
+
+
+
+
+
+LOGICA DEL PARTIDO:
+    1.  Sumar 1 num por cada punto
+        Restar 1 num en caso de que vaya un punto de mas
+    
+    2.  Cada modificacion que haya en los Sum/Res se refleje en el contador de puntos.
+        jugar el set a 25 puntos con diferencia de 2 si o si
+            si llega a 25 gana el set >=2
+                set ganado (suma 1 set)
+            si no
+                 hata que supere los 2 puntos de diferencia
+        si el contador de sets va 1-1 
+            definicion en el set 3 a 15pts con diferencia >=2 (cumpliendo siempre la misma condicion de los 2 puntos de diferencia)
+            
+
+    3.  Arrancando desde 1 / Primer / 1er, cada que un equipo cumpla con el set ganado, aumentamos el set de 1 a 2 hasta 3
+        siempre se juega al mejor de 3
+
+    4.  Tener como base equiA/equiB, "clave" : valor , que yo pueda agregar un nombre al valor de quipo
+        si una clave no tiene valor
+            avisar que no tiene valor y que debe poner 1 si o si
+        si no 
+            puede arrancar el partido normalmente
+        hasta que no termine el partido no se puede cambiar los nombres
+    
+    5.  Cada que un equipo gane debe mostrarse en la pantalla quien fue el Ganador(no en una alerta) mejor en un contenedor
+        ir cargando en un contenedor quien va con el set ganado
+
+    6.  Lo mismo que el punto 4)
+
+    7.  
+
+
+

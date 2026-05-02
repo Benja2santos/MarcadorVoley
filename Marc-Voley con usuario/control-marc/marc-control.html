@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets-control/img/ico/ball_15679874.png" type="image/png">
+    <!-- <link rel="icon" href="./assets-control/img/ico/ico-voleibol-50.png" type="image/png"> -->
+    <link rel="stylesheet" href="./assets-control/style/formato.css">
+    <title>Control Marc</title>
+</head>
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor">
+
+        <!-- TÍTULO -->
+        <div class="caja-titulo">
+            <h1 class="titulo">Marcador Voley</h1>
+        </div>
+
+        <!-- SET ACTUAL -->
+        <div class="caja-sets">
+            <h2 class="sets">
+                <span id="contador-set">Primer</span> Set
+            </h2>
+        </div>
+
+        <!-- EQUIPOS -->
+        <div class="equipos">
+
+            <!-- EQUIPO A -->
+            <div class="equipo">
+                <h1>Equipo A</h1>
+                <div>Sets Ganados: <span id="sets-ganados-A">0</span></div>
+
+                <div class="puntos" id="puntos-A">0</div>
+
+                <div class="botones">
+                    <button onclick="sumarPuntos('A')">+1</button>
+                    <button onclick="restarPuntos('A')">-1</button>
+                </div>
+            </div>
+
+            <!-- EQUIPO B -->
+            <div class="equipo">
+                <h1>Equipo B</h1>
+                <div>Sets Ganados: <span id="sets-ganados-B">0</span></div>
+
+                <div class="puntos" id="puntos-B">0</div>
+
+                <div class="botones">
+                    <button onclick="sumarPuntos('B')">+1</button>
+                    <button onclick="restarPuntos('B')">-1</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTROLES -->
+        <div class="controles">
+            <button onclick="reiniciarPuntos()">Reiniciar Puntos</button>
+            <button onclick="reiniciarPartido()">Reiniciar Partido</button>
+        </div>
+
+    </div>
+    <script src="./assets-control/script/marc-control.js"></script>
+</body>
+</html>
